@@ -7,15 +7,15 @@
 
 }
 
-.row p {
+.dl-mg-input-row {
 
     font-size: 15px;
     font-weight: 600;
     color: white;
 
 }
-.input {
-    width:300px;
+.dl-mg-input {
+    width:350px;
     height:30px;
     color: black;
     display:inline-block;
