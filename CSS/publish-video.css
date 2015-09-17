@@ -2,7 +2,7 @@
     height: 1000px;
     padding-top:75px;
     padding-left:20px;
-    background: url("noisy_net.png" ) 100% 100%;
+    background: url("../noisy_net.png") 100% 100%;
     color:white;
 
 }
@@ -26,6 +26,10 @@ button:hover {
     color: #ffffff;
 }
 
+.dl-mg-form-horizontal{
+    margin-top:10px;
+
+}
 
 
 
