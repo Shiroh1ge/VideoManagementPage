@@ -32,6 +32,10 @@ button:hover {
 }
 
 
+.dl-mg-input-error {
+    color:red;
+
+}
 
 html {
     font-family: Lato, sans-serif;
