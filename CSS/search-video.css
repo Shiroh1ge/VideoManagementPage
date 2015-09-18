@@ -21,18 +21,15 @@ button:hover {
     outline:0px !important;
     -webkit-appearance:none;
 }
-.btn-primary {
-    background: #0099cc;
-    color: #ffffff;
-}
 
-.dl-pv-form-horizontal{
+
+.dl-mg-form-horizontal{
     margin-top:10px;
 
 }
 
 
-.dl-pv-input-error {
+.dl-mg-input-error {
     color:red;
 
 }

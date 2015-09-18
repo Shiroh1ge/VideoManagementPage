@@ -6,30 +6,30 @@
 
 $(document).ready(function () {
 
-    var formSubmit =  $("#dl-mg-form-publish").validate({
+    var formSubmit =  $("#dl-pv-form-publish").validate({
         rules: {
-            'dl-mg-input-youtube': {
+            'dl-pv-input-youtube': {
                 required: true,
                 url:true,
             },
-            'dl-mg-input-title': {
+            'dl-pv-input-title': {
                 required: true,
                 minlength: 6
             },
 
-            'dl-mg-input-hero': {
+            'dl-pv-input-hero': {
                 required: true,
             },
-            'dl-mg-input-contributor': {
+            'dl-pv-input-contributor': {
                 required: true,
             },
-            'dl-mg-input-mmr': {
+            'dl-pv-input-mmr': {
                 required: true,
             },
-            'dl-mg-input-date': {
+            'dl-pv-input-date': {
                 required: true,
             },
-            'dl-mg-input-parent': {
+            'dl-pv-input-parent': {
                 required: true,
             },
 
@@ -39,23 +39,23 @@ $(document).ready(function () {
 
     });
 
-    $('#dl-mg-button-publish').click(function () {
+    $('#dl-pv-button-publish').click(function () {
 
-      if(!$("#dl-mg-form-publish").valid()) {
+      if(!$("#dl-pv-form-publish").valid()) {
           return false;
       }
 
         var videoInformation = {
-            youtubeID: $('#dl-mg-input-youtube').val(),
-            title: $('#dl-mg-input-title').val(),
-            hero: $('#dl-mg-input-hero').val(),
-            contributor: $('#dl-mg-input-contributor').val(),
-            mmr: $('#dl-mg-input-mmr').val(),
-            date: $('#dl-mg-input-date').val(),
-            parent: $('#dl-mg-input-parent').val()
+            youtubeID: $('#dl-pv-input-youtube').val(),
+            title: $('#dl-pv-input-title').val(),
+            hero: $('#dl-pv-input-hero').val(),
+            contributor: $('#dl-pv-input-contributor').val(),
+            mmr: $('#dl-pv-input-mmr').val(),
+            date: $('#dl-pv-input-date').val(),
+            parent: $('#dl-pv-input-parent').val()
 
         }
-        console.log(videoInformation);
+
 
     });
 
