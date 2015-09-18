@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jQuery validation plugin" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="jQuery" />
+      <option name="frameworkVersion" value="1.14" />
+    </properties>
+    <CLASSES />
+    <DOCUMENTATION>
+      <root url="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js" />
+    </DOCUMENTATION>
+    <SOURCES />
+  </library>
+</component>

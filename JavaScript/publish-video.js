@@ -1,21 +1,49 @@
 /**
  * Created by haker on 17-Sep-15.
  */
+
+
+
 $(document).ready(function () {
-    $('#dl-mg-button-publish').on('click', function () {
 
-        if ($('#dl-mg-input-youtube').val().length < 1) {
-            function inputError() {
-                $('#dl-mg-input-error-youtube').show();
-            }
+    var formSubmit =  $("#dl-mg-form-publish").validate({
+        rules: {
+            'dl-mg-input-youtube': {
+                required: true,
+                url:true,
+            },
+            'dl-mg-input-title': {
+                required: true,
+                minlength: 6
+            },
 
-            inputError();
+            'dl-mg-input-hero': {
+                required: true,
+            },
+            'dl-mg-input-contributor': {
+                required: true,
+            },
+            'dl-mg-input-mmr': {
+                required: true,
+            },
+            'dl-mg-input-date': {
+                required: true,
+            },
+            'dl-mg-input-parent': {
+                required: true,
+            },
+
+
         }
-        else {
-            $('#dl-mg-input-error-youtube').hide();
-            $('#dl-mg-input-youtube').css('input', 'red');
-        }
 
+
+    });
+
+    $('#dl-mg-button-publish').click(function () {
+
+      if(!$("#dl-mg-form-publish").valid()) {
+          return false;
+      }
 
         var videoInformation = {
             youtubeID: $('#dl-mg-input-youtube').val(),
@@ -25,13 +53,16 @@ $(document).ready(function () {
             mmr: $('#dl-mg-input-mmr').val(),
             date: $('#dl-mg-input-date').val(),
             parent: $('#dl-mg-input-parent').val()
-        }
 
+        }
+        console.log(videoInformation);
 
     });
 
 
 });
+
+
 
 
 
