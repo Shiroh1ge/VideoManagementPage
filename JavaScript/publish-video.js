@@ -8,6 +8,9 @@ $(document).ready(function () {
 
     var formSubmit =  $("#dl-pv-form-publish").validate({
         rules: {
+
+            onfocusout: false,
+            onkeyup: false,
             'dl-pv-input-youtube': {
                 required: true,
                 url:true,
