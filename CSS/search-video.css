@@ -1,10 +1,13 @@
-#dl-pv-main-container {
+#dl-sv-main-container {
     height: 1000px;
     padding-top:75px;
     padding-left:20px;
     background: url("../noisy_net.png") 100% 100%;
     color:white;
 
+}
+#dl-sv-form-horizontal {
+    padding-right:40px;
 }
 
 
@@ -23,16 +26,14 @@ button:hover {
 }
 
 
-.dl-mg-form-horizontal{
+.dl-sv-form-horizontal{
     margin-top:10px;
 
 }
 
 
-.dl-mg-input-error {
-    color:red;
 
-}
+
 
 html {
     font-family: Lato, sans-serif;
