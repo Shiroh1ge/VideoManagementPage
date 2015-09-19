@@ -4,6 +4,7 @@
     padding-left:20px;
     background: url("../noisy_net.png") 100% 100%;
     color:white;
+    font-weight:bold;
 
 }
 #dl-sv-form-horizontal {
@@ -13,6 +14,14 @@
 #dl-sv-input-mmr{
     margin-bottom:3%;
 }
+
+#slider-range .ui-slider-range {
+    background:#337ab7;
+}
+element.style{
+    color:black;
+}
+
 
 textarea:hover,
 input:hover,
