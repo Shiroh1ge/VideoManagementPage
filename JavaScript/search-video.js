@@ -6,7 +6,7 @@ $(document).ready(function () {
             min: 2000,
             max: 8500,
             values: [ 2000, 8000 ],
-            step:100,
+            step:200,
             slide: function( event, ui ) {
                 $( "#dl-sv-input-mmr" ).val(  ui.values[ 0 ] + " - " + ui.values[ 1 ] );
             }
